@@ -1,5 +1,19 @@
 # data-engineering_projects
 
+Infrastructure
+The following tools and technologies are used:
+
+Cloud - Google Cloud Platform
+Infrastructure as Code software - Terraform
+Containerization - Docker, Docker Compose
+Batch Processing - Python
+Orchestration - Prefect
+Transformation - dbt
+Data Lake - Google Cloud Storage
+Data Warehouse - BigQuery
+Data Visualization - Data Studio
+
+
 Create a service account in the project.
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
 

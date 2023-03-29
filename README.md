@@ -13,6 +13,7 @@ Data Lake - Google Cloud Storage
 Data Warehouse - BigQuery
 Data Visualization - Data Studio
 
+Airbnb in Hong Kong
 
 Create a service account in the project.
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
@@ -51,5 +52,8 @@ Terraform apply
 ![image](https://user-images.githubusercontent.com/113747768/227894793-ab444896-3156-4b68-9f08-c29167e7716e.png)
 ![image](https://user-images.githubusercontent.com/113747768/227894900-6dfea994-f2e7-48a6-abb4-e07022caf016.png)
 
+Inside Airbnb is the source data for this project. A bash script (download_data.sh) is created for downloading the raw dataset from the website to local machine. 
+The raw data structure is as below. This script can be run with the orchestration tool or simply in a cron job.
+![image](https://user-images.githubusercontent.com/113747768/228484051-b5821811-9ecd-4113-b70e-f831d2f01703.png)
 
 

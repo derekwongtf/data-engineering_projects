@@ -63,7 +63,7 @@ The script is then wrapped with python code with prefect decorator. When the scr
 ![image](https://user-images.githubusercontent.com/113747768/228735560-bfe82fbd-ac7e-42f3-90e6-325898d6c310.png)
 ![image](https://user-images.githubusercontent.com/113747768/228735676-c481bdb2-396d-44f2-b1bf-0ae6c78541da.png)
 
-The process will be recorded on prefect cloud. 
+The process will be recorded on prefect cloud.
 <img width="310" alt="image" src="https://user-images.githubusercontent.com/113747768/228735236-65ebf77c-25ef-45ad-92b8-6b4e9dc90226.png">
 
 The structure of the raw data is organised as below. 

@@ -52,8 +52,21 @@ Terraform apply
 ![image](https://user-images.githubusercontent.com/113747768/227894793-ab444896-3156-4b68-9f08-c29167e7716e.png)
 ![image](https://user-images.githubusercontent.com/113747768/227894900-6dfea994-f2e7-48a6-abb4-e07022caf016.png)
 
+Set up the prefect cloud account and get the API key.
+![image](https://user-images.githubusercontent.com/113747768/228734231-64a4868a-333e-471c-93ad-1fd5fb0475ca.png)
+
+Check if prefect in the local machine is configured to use prefect cloud
+![image](https://user-images.githubusercontent.com/113747768/228734855-c1e421f9-8532-41d3-9f4d-a4cac33940a7.png)
+
 Inside Airbnb is the source data for this project. A bash script (download_data.sh) is created for downloading the raw dataset from the website to local machine. 
-The raw data structure is as below. This script can be run with the orchestration tool or simply in a cron job.
+The script is then wrapped with python code with prefect decorator. When the script is run, the output in local machine is as below.
+![image](https://user-images.githubusercontent.com/113747768/228735560-bfe82fbd-ac7e-42f3-90e6-325898d6c310.png)
+![image](https://user-images.githubusercontent.com/113747768/228735676-c481bdb2-396d-44f2-b1bf-0ae6c78541da.png)
+
+The process will be recorded on prefect cloud. 
+<img width="310" alt="image" src="https://user-images.githubusercontent.com/113747768/228735236-65ebf77c-25ef-45ad-92b8-6b4e9dc90226.png">
+
+The structure of the raw data is organised as below. 
 ![image](https://user-images.githubusercontent.com/113747768/228484051-b5821811-9ecd-4113-b70e-f831d2f01703.png)
 
 

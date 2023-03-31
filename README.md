@@ -6,14 +6,14 @@ The following tools and technologies are used:
 Cloud - Google Cloud Platform
 Infrastructure as Code software - Terraform
 Containerization - Docker, Docker Compose
-Batch Processing - Python
+Batch Processing - Python, Spark
 Orchestration - Prefect
 Transformation - dbt
 Data Lake - Google Cloud Storage
 Data Warehouse - BigQuery
 Data Visualization - Data Studio
 
-Airbnb in Hong Kong
+# Airbnb in Hong Kong
 
 Create a service account in the project.
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
@@ -21,10 +21,10 @@ Create a service account in the project.
 Create a json key for the service account.
 ![image](https://user-images.githubusercontent.com/113747768/227587342-7a2d10ab-09bd-4008-9eee-fcef1bf19e75.png)
 
-# use service-account's auth-token for this session
+Use service-account's auth-token
 gcloud auth application-default login
 
-# Build the google cloud reosurce throught the use of IaC tool, Terraform
+Build the google cloud reosurce throught the use of IaC tool, Terraform
 Create a terraform configuration folder and type the following command 
 
 Terraform init
@@ -68,5 +68,10 @@ The process will be recorded on prefect cloud.
 
 The structure of the raw data is organised as below. 
 ![image](https://user-images.githubusercontent.com/113747768/228484051-b5821811-9ecd-4113-b70e-f831d2f01703.png)
+
+Convert the raw compressed csv files to parquet files using pyspark
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/113747768/229048780-1ccae0af-6e01-4a79-9319-3ed3828ae8db.png">
+<img width="812" alt="image" src="https://user-images.githubusercontent.com/113747768/229048896-5fa76d6f-3cb3-47e9-971c-fffaaf7ec036.png">
+
 
 

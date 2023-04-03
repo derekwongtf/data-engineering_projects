@@ -31,7 +31,7 @@ Terraform init
 
 Create 2 files as below in the folder
 
-touch main.tf
+touch main.tf \n
 touch variable.tf
 
 Add the configuration to these files which are to create a bucket and a data set in big query in google cloud. Please refer the files in this project for the content of them.

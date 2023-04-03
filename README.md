@@ -22,20 +22,20 @@ Create a json key for the service account.
 ![image](https://user-images.githubusercontent.com/113747768/227587342-7a2d10ab-09bd-4008-9eee-fcef1bf19e75.png)
 
 Use service-account's auth-token
-
+```
 gcloud auth application-default login
-
+```
 Build the google cloud reosurce throught the use of IaC tool, Terraform
 Create a terraform configuration folder and type the following command 
-
+```
 Terraform init
-
+```
 Create 2 files as below in the folder
-
+```
 touch main.tf
 
 touch variable.tf
-
+```
 Add the configuration to these files which are to create a bucket and a data set in big query in google cloud. Please refer the files in this project for the content of them.
 
 Generates a speculative execution plan, showing what actions Terraform would take to apply the current configuration.

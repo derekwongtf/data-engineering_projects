@@ -90,5 +90,5 @@ Create a directory and download the jar file to the directory. The jar file is u
 ```
 mkdir lib
 cd lib
-gsutil cp gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.5.jar
+gsutil cp gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.5.jar .
 ```

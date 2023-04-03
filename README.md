@@ -59,6 +59,9 @@ Set up the prefect cloud account and get the API key.
 ![image](https://user-images.githubusercontent.com/113747768/228734231-64a4868a-333e-471c-93ad-1fd5fb0475ca.png)
 
 Check if prefect in the local machine is configured to use prefect cloud
+```
+prefrect profile inspect
+```
 ![image](https://user-images.githubusercontent.com/113747768/228734855-c1e421f9-8532-41d3-9f4d-a4cac33940a7.png)
 
 Inside Airbnb is the source data for this project. A bash script (download_data.sh) is created for downloading the raw dataset from the website to local machine. 

@@ -108,5 +108,6 @@ gcloud dataproc jobs submit pyspark \
 ```
 
 The analysis result is put into Big Query(Data Warehouse).
-![image](https://user-images.githubusercontent.com/113747768/230126965-8fb8b276-3dd2-4f0f-938d-ddda7a0d896c.png)
+![image](https://user-images.githubusercontent.com/113747768/230127538-8a5a44b2-4d0c-4643-a045-6295d8b0d9a5.png)
+
 

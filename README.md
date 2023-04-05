@@ -18,6 +18,9 @@ Data Visualization - Data Studio
 Create a service account in the project.
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
 
+Assign the privileges as shown below to the service account.
+![image](https://user-images.githubusercontent.com/113747768/230121154-bb8e8c64-568c-41b6-bf9b-eac3b5532e71.png)
+
 Create a json key for the service account.
 ![image](https://user-images.githubusercontent.com/113747768/227587342-7a2d10ab-09bd-4008-9eee-fcef1bf19e75.png)
 
@@ -92,3 +95,18 @@ mkdir lib
 cd lib
 gsutil cp gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.5.jar .
 ```
+Create a spark cluster on gcp.
+![image](https://user-images.githubusercontent.com/113747768/230124738-080c758f-cd6b-44e3-9b2a-ba4537fd6968.png)
+
+Run the sql analysis in the cloud.
+```
+gcloud dataproc jobs submit pyspark \
+    --cluster=cluster-de-project \
+    --region=asia-east1 \
+    --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar \
+    gs://dtc_data_lake_de-project-381616/code/spark_bigquery.py
+```
+
+The analysis result is put into Big Query(Data Warehouse).
+![image](https://user-images.githubusercontent.com/113747768/230126965-8fb8b276-3dd2-4f0f-938d-ddda7a0d896c.png)
+

@@ -106,7 +106,8 @@ Here is the flow diagram from start to end.
 
 ![image](https://user-images.githubusercontent.com/113747768/230402093-515ad5d4-4c0e-4e6c-8e1c-879389a6e0fe.png)
 
-The table with prefix airbnb are new tables.
+The tables with prefix airbnb under the dataset 'data_all' are new tables.
+
 ![image](https://user-images.githubusercontent.com/113747768/230402500-e0dfb7d0-2a4b-47bd-9424-a3f65f566e94.png)
 
 

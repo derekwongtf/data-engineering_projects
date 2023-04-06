@@ -108,7 +108,7 @@ Here is the flow diagram from start to end.
 
 The tables with prefix airbnb under the dataset 'data_all' are new tables.
 
-![image](https://user-images.githubusercontent.com/113747768/230402500-e0dfb7d0-2a4b-47bd-9424-a3f65f566e94.png)
+![image](https://user-images.githubusercontent.com/113747768/230416760-bb61f230-fb30-4e29-8eb8-bb38e56da556.png)
 
 Upload the spark script (spark_bigquery.py) to gcs.
 ```

@@ -18,12 +18,15 @@ The following tools and technologies are used:
 
 # Step to reproduce the result
 Create a service account in the project.
+
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
 
 Assign the privileges as shown below to the service account.
-![image](https://user-images.githubusercontent.com/113747768/230121154-bb8e8c64-568c-41b6-bf9b-eac3b5532e71.png)
+
+![image](https://user-images.githubusercontent.com/113747768/230426968-2e43952b-9742-472d-b9e5-8dfa63538d6d.png)
 
 Create a json key for the service account.
+
 ![image](https://user-images.githubusercontent.com/113747768/227587342-7a2d10ab-09bd-4008-9eee-fcef1bf19e75.png)
 
 Use service-account's auth-token

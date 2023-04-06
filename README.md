@@ -14,6 +14,9 @@ Data Warehouse - BigQuery
 Data Visualization - Data Studio
 
 # Airbnb in Hong Kong
+$ Problem
+1. What kinds of rooms are available on the market in Hong Kong?
+2. How is the price of each type of room is changed over the time?
 
 Create a service account in the project.
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
@@ -89,6 +92,20 @@ Upload the parquet files to gcp
 ```
 gsutil -m cp -r pq/ gs://dtc_data_lake_de-project-381616/pq
 ```
+
+Upload the file from gcs to Big Query(Data Warehouse). 
+```
+python gcs_to_bq.py
+```
+
+The script is run with Prefect. 
+![image](https://user-images.githubusercontent.com/113747768/230401873-2d63dd95-0241-451a-a400-a99af6e98b14.png)
+Here is the flow diagram from start to end.
+![image](https://user-images.githubusercontent.com/113747768/230402093-515ad5d4-4c0e-4e6c-8e1c-879389a6e0fe.png)
+
+![image](https://user-images.githubusercontent.com/113747768/230402500-e0dfb7d0-2a4b-47bd-9424-a3f65f566e94.png)
+
+
 Create a directory and download the jar file to the directory. The jar file is used for connecting to gcs
 ```
 mkdir lib

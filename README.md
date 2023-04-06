@@ -2,17 +2,14 @@
 
 Infrastructure
 The following tools and technologies are used:
-
 * Cloud - Google Cloud Platform
-
 * Infrastructure as Code software - Terraform
-
-Batch Processing - Python, Spark
-Orchestration - Prefect
-Transformation - dbt
-Data Lake - Google Cloud Storage
-Data Warehouse - BigQuery
-Data Visualization - Data Studio
+* Batch Processing - Python, Spark
+* Orchestration - Prefect
+* Transformation - Spark
+* Data Lake - Google Cloud Storage
+* Data Warehouse - BigQuery
+* Data Visualization - Data Studio
 
 # Airbnb in Hong Kong
 ## Problem

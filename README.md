@@ -88,12 +88,12 @@ Convert the raw compressed csv files to parquet files using pyspark
 <img width="805" alt="image" src="https://user-images.githubusercontent.com/113747768/229048780-1ccae0af-6e01-4a79-9319-3ed3828ae8db.png">
 <img width="812" alt="image" src="https://user-images.githubusercontent.com/113747768/229048896-5fa76d6f-3cb3-47e9-971c-fffaaf7ec036.png">
 
-Upload the parquet files to gcp
+Upload the parquet files to gcs
 ```
 gsutil -m cp -r pq/ gs://dtc_data_lake_de-project-381616/pq
 ```
 
-Upload the file from gcs to Big Query(Data Warehouse). 
+Upload the files from gcs to Big Query(Data Warehouse). 
 ```
 python gcs_to_bq.py
 ```
@@ -110,6 +110,10 @@ The tables with prefix airbnb under the dataset 'data_all' are new tables.
 
 ![image](https://user-images.githubusercontent.com/113747768/230402500-e0dfb7d0-2a4b-47bd-9424-a3f65f566e94.png)
 
+Upload the spark script (spark_bigquery.py) to gcs.
+```
+gsutil cp spark_bigquery.py gs://dtc_data_lake_de-project-381616/code/
+```
 
 Create a directory and download the jar file to the directory. The jar file is used for connecting to gcs
 ```

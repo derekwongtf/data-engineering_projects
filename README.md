@@ -3,9 +3,10 @@
 Infrastructure
 The following tools and technologies are used:
 
-Cloud - Google Cloud Platform
-Infrastructure as Code software - Terraform
-Containerization - Docker, Docker Compose
+* Cloud - Google Cloud Platform
+
+* Infrastructure as Code software - Terraform
+
 Batch Processing - Python, Spark
 Orchestration - Prefect
 Transformation - dbt
@@ -14,10 +15,11 @@ Data Warehouse - BigQuery
 Data Visualization - Data Studio
 
 # Airbnb in Hong Kong
-$ Problem
+## Problem
 1. What kinds of rooms are available on the market in Hong Kong?
 2. How is the price of each type of room is changed over the time?
 
+# Step to reproduce the result
 Create a service account in the project.
 ![image](https://user-images.githubusercontent.com/113747768/227586360-3563a04e-e7d0-4c03-9725-cebfc136e327.png)
 
@@ -134,6 +136,19 @@ gcloud dataproc jobs submit pyspark \
 ```
 
 The analysis result is put into Big Query(Data Warehouse).
-![image](https://user-images.githubusercontent.com/113747768/230128652-cb7f3fbd-c205-4068-ab2b-153516f54954.png)
 
+![image](https://user-images.githubusercontent.com/113747768/230422822-38662fe7-70c8-446a-89b6-63de821d0806.png)
+
+Then the analysis result can be visualize through the Data Studio
+
+![image](https://user-images.githubusercontent.com/113747768/230423415-c136c438-d487-448c-931f-b64afca000b7.png)
+
+Here are the two graph for resolving the 2 problems
+The first grpah tells us that these are four kinds of room type are for renting through aibnb in Hong Kong. Half of them are private room.
+
+![image](https://user-images.githubusercontent.com/113747768/230423723-5cbd9c7a-901f-4006-9686-7c0589b59f58.png)
+
+The second graph tells us that the price of all kinds of room type surge since June, 2022. The time of price surge happens coincide with the Hong Kong Goverment abondon the COVID-19 measure around the same time.
+
+![image](https://user-images.githubusercontent.com/113747768/230424160-612431e9-3f4f-4fe2-9922-1eddf42db52c.png)
 
